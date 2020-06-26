@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* 1rem=10px */
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 300;
+  background: #fff;
+  box-sizing: border-box;
+  font-family: $font-1;
+  color: $color-1;
+}
+.row {
+  width: 114rem;
+  margin: 0 auto;
+}
+.spacer {
+  flex: 1;
+}
+.vr-line {
+  height: 100%;
+  width: 0.1rem;
+  background: $color-1;
+  opacity: 0.2;
+}
+
+section {
+  margin: 9rem 0;
+}
+
+.hr-line {
+  height: 0.1rem;
+  width: 100%;
+  background: $color-1;
+  opacity: 0.2;
+}

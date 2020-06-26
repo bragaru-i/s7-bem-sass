@@ -1,0 +1,74 @@
+.footer-container {
+  height: 30.7rem;
+  margin-top: 11rem;
+  width: 100%;
+}
+
+.footer {
+  display: block;
+  @include flexCenter();
+  justify-content: space-between;
+  &-section {
+    height: 21.8rem;
+  }
+  &__phone {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  &__adress {
+    margin-top: 1.8rem;
+    width: 23.7rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  &-section__1 {
+    // padding-top: 2.2rem;
+    box-sizing: content-box;
+  }
+  &-section__2 {
+    padding-top: 5.2rem;
+    width: 56.7rem;
+    height: 12rem;
+    @include flexCenter();
+    justify-content: space-between;
+    box-sizing: content-box;
+  }
+  &__links {
+    list-style: none;
+    @include flexCenter();
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: baseline;
+  }
+  &__link a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: $color-1;
+  }
+
+  &-2 {
+    @include flexCenter();
+    justify-content: space-between;
+    height: 8.8rem;
+  }
+  &__copyright {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  &__social {
+    @include flexCenter();
+    img {
+      margin: 0 0.5rem;
+      cursor: pointer;
+    }
+  }
+  &__created {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+    color: #8a9099;
+  }
+}

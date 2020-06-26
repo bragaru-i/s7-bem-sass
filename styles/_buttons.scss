@@ -1,0 +1,39 @@
+.btn {
+  @include flexCenter();
+  justify-content: center;
+  font-weight: 500;
+
+  cursor: pointer;
+  &__login {
+    padding: 1.2rem 2.5rem;
+
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    &--gray {
+      background: $btn-login-background;
+      border-radius: 1.2rem;
+    }
+  }
+  &__primary {
+    height: 6rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: $btn-primary-color;
+    background: $btn-primary-background;
+    border-radius: 14px;
+    padding: 1.5rem 3.2rem;
+    &--info {
+      color: $color-1;
+      background-color: unset;
+      border: 2px solid $btn-primary-background;
+    }
+  }
+}
+
+::placeholder {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: $card-color-date;
+}

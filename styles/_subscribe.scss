@@ -1,0 +1,84 @@
+.subscribe {
+  &-section {
+    height: 300px;
+    background: $color-subscribe;
+    border-radius: 1.6rem;
+  }
+
+  &__body {
+    margin: 5rem 6.8rem 6rem 6.1rem;
+    display: inline-block;
+    height: 30rem;
+    width: 57.4rem;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    width: 100%;
+    color: $card-background;
+  }
+  &__masks {
+    float: right;
+    display: inline-block;
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    width: 43.7rem;
+    height: 35.6rem;
+    top: -8rem;
+    right: 0;
+    z-index: 3;
+  }
+  &__ellipse {
+    overflow: hidden;
+    width: 45rem;
+    height: 45rem;
+    z-index: 2;
+    position: absolute;
+    border-radius: 50%;
+
+    &--plain {
+      z-index: 1;
+      background: #294266;
+      top: 4.2rem;
+      right: -9.1rem;
+    }
+    &--empty {
+      z-index: 2;
+      background: #294266;
+      top: 4.8rem;
+      right: -7.3rem;
+      opacity: 0.7;
+      background-color: unset;
+      border: 1px solid #f0c734;
+    }
+  }
+  &__input {
+    width: 36rem;
+    height: 6rem;
+    background: $btn-primary-color;
+    border-radius: 12px;
+    margin-right: 2rem;
+    outline: 0;
+    border: none;
+    padding: 1.8rem;
+  }
+  &__button {
+    display: inline;
+  }
+  &__form {
+    margin-top: 4.2rem;
+  }
+}
+
+.subscribe__mask {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  height: 30rem;
+  width: 40rem;
+}

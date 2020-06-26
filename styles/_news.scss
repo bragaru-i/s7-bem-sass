@@ -1,0 +1,49 @@
+.news {
+  height: 64rem;
+  &__cards {
+    @include flexCenter();
+    justify-content: space-between;
+    margin: 6.2rem 0;
+  }
+}
+
+.card {
+  background-color: $card-background;
+  border: 1px solid $card-border;
+  box-sizing: border-box;
+  border-radius: 1.6rem;
+  width: 36.4rem;
+  height: 44.6rem;
+
+  &__image {
+    height: 23rem;
+    width: 100%;
+    & img {
+      background-size: cover;
+      width: 100%;
+      border-top-left-radius: 1.6rem;
+      border-top-right-radius: 1.6rem;
+    }
+  }
+  &__body {
+    height: 21.6rem;
+    width: 100%;
+    padding: 2.5rem 3.2rem;
+    @include flexCenter();
+    align-items: flex-start;
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__date {
+    font-size: 13px;
+    line-height: 20px;
+
+    color: $card-color-date;
+  }
+}

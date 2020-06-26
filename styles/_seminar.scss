@@ -1,0 +1,75 @@
+.seminars {
+  background-color: $icon-background;
+  height: 64rem;
+  box-sizing: border-box;
+}
+
+.seminar {
+  height: 100%;
+
+  &__title {
+    height: 13rem;
+    margin-bottom: 6.2rem;
+  }
+  &__cards {
+    margin-top: 9.8rem;
+    @include flexCenter();
+    justify-content: space-between;
+  }
+  &__card {
+    width: 558px;
+    height: 369px;
+    padding: 5rem;
+    background: $btn-primary-color;
+    border-radius: 16px;
+  }
+  &__date {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  &__name {
+    margin: 3.3rem 0 2.2rem 0;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+  }
+
+  &__tags {
+    margin-top: 3.4rem;
+    @include flexCenter();
+  }
+  &__timing {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-right: 1.6rem;
+    @include flexCenter();
+    display: inline-flex;
+    flex-direction: row;
+    color: #8a9099;
+    &-icon {
+      margin-right: 0.8rem;
+    }
+  }
+  &__tag {
+    margin-right: 0.8rem;
+  }
+}
+.tag {
+  @include flexCenter();
+  padding: 0.3rem 1rem;
+  background: $btn-login-background;
+  border-radius: 3rem;
+  font-family: $font-2;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: $color-1;
+  &__svg-ellipse {
+    fill: #4671af;
+    margin-right: 0.4rem;
+    fill: '#01B48A';
+    &--green {
+      fill: $btn-primary-background;
+    }
+  }
+}
