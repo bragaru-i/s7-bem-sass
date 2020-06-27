@@ -66,6 +66,8 @@
   }
   &__social {
     @include flexCenter();
+    justify-self: center;
+    padding-right: 6rem;
     img {
       margin: 0 0.5rem;
       cursor: pointer;
