@@ -15,10 +15,12 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 300;
-  background: #fff;
+  background: $body-background;
   box-sizing: border-box;
   font-family: $font-1;
   color: $color-1;
+  width: 140rem;
+  margin: 0 auto;
 }
 .row {
   width: 114rem;
@@ -37,10 +39,19 @@ body {
 section {
   margin: 9rem 0;
 }
-
+section:first-child {
+  margin: 0;
+  margin-bottom: 9rem;
+  padding-top: 9rem;
+}
 .hr-line {
   height: 0.1rem;
   width: 100%;
   background: $color-1;
   opacity: 0.2;
+}
+
+main,
+footer {
+  background: $white-background !important;
 }

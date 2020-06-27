@@ -50,11 +50,13 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 300;
-  background: #fff;
+  background: #e5e5e5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Golos", sans-serif;
   color: #1d222b;
+  width: 140rem;
+  margin: 0 auto;
 }
 
 .row {
@@ -79,6 +81,12 @@ section {
   margin: 9rem 0;
 }
 
+section:first-child {
+  margin: 0;
+  margin-bottom: 9rem;
+  padding-top: 9rem;
+}
+
 .hr-line {
   height: 0.1rem;
   width: 100%;
@@ -86,8 +94,14 @@ section {
   opacity: 0.2;
 }
 
+main,
+footer {
+  background: #fff !important;
+}
+
 .header {
   font-size: 1.6rem;
+  background: #fff;
 }
 
 .nav {
@@ -791,12 +805,13 @@ section {
 
 .footer-container {
   height: 30.7rem;
-  margin-top: 11rem;
+  padding-top: 11rem;
   width: 100%;
 }
 
 .footer {
   display: block;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,6 +838,10 @@ section {
   width: 23.7rem;
   font-size: 1.4rem;
   line-height: 2.2rem;
+}
+
+.footer-section {
+  background-color: #fff;
 }
 
 .footer-section__1 {
@@ -875,6 +894,7 @@ section {
 }
 
 .footer-2 {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,5 +978,9 @@ section {
 
 .title__icon {
   margin-left: 0.8rem;
+}
+
+.wrapper {
+  background-color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

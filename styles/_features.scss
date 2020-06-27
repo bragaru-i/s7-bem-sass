@@ -1,7 +1,6 @@
 .features {
   width: 105.6rem;
   height: 57.5rem;
-  //   background-color: red;
   @include flexCenter();
   justify-content: space-between;
   &__images {
